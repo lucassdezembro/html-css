@@ -1,0 +1,49 @@
+/*Criando variáveis*/
+:root{
+    --cor-fundo: rgb(71, 71, 71);
+    --cor-hover: rgb(0, 184, 144);
+    --cor-primaria: rgb(214, 214, 214);
+}
+
+.dp-menu ul{
+    list-style: none;
+    padding: 0;
+}
+
+.dp-menu ul{
+    background-color: var(--cor-fundo); /*utilizando variáveis*/
+}
+
+.dp-menu ul li{
+    display: inline; /*dispostos em linha e ocupando todo o espaço*/
+    position: relative;
+    
+}
+
+.dp-menu ul li a{
+    color: var(--cor-primaria);
+    text-decoration: none; /*removendo o underlined do link*/
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s; /*colocando transição no background de todos os links*/
+}
+
+.dp-menu ul li a:hover{
+    background-color: var(--cor-hover);
+}
+
+/*submenu*/
+.dp-menu ul ul{
+    display: none;
+    position: absolute;
+    left: 0; /*alinhar a tag filha com a pai*/
+    width: 150px;
+}
+
+.dp-menu ul li:hover ul{ /*lê-se "quando passar o mouse sobre um li que tem um ul dentro"*/
+    display: block;
+}
+
+.dp-menu ul ul li a{
+    display: block;
+}

@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(26, 26, 26);
+}
+
+footer p{
+    color: white;
+    font: normal 18pt Arial;
+}
